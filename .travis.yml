@@ -23,4 +23,3 @@ deploy:
     secret_access_key: 
         secure: "$AWS_SECRET_KEY"
     edge: true
-    skip_cleanup: true

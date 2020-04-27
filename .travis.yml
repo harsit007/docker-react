@@ -19,25 +19,8 @@ deploy:
     bucket_path: "docker-react"
     on:
         branch: master
-    access_key_id: 
-        secure: "xbgL3uP2BuCqc6hns8VzlMiRR9qlOUqJjmxjyMzesXeRqTAE/Bf7YZ8l3OsAcCJYL53MS
-        bHe2xlbRFKcKqrL6sCYiQvOOayW1qnTPN2Lf9dBj6h/cQ5lY47ubCzbXvGZsNlM8db2AruHaNrSOdxvQ
-        47RrXiQCrcM1mVWp/AGDEe/usNv9nPTP8g5lLYUKJjoCXSGesUltrC1tuueoMNg25sW1pU4GhJo4/fOz
-        dXs+hHBh0NXqqehL8WfDwenONRHs/3LXh/QND4K1YXPYSEmZVIjWepyc26qzRCz+PAJTE7mg+zDfySWb
-        XtXrJWGM44xNhWYvfQ8P3Ytgd+1ttPB53f4Z/VhzERqN+XS270S6HeDXYBVjNaFS0FMnPMc4nQ42gFTG
-        /Z6Dxzp5jT/wyFz/0UcyDmNs/HGz8v8clDY25TXOaUAG7Y7Nj8/ChjYFggdC0rkl3kFb/QnDdBptICVO
-        VihyPZc5mAmkgELvdKkV1pv8M22Arc/W7UfR06E2UxS8JG7PirATbwrUL37HydLvjD0fQ967QDBbkMiT
-        /E6wUXt+OKcOcs5FVejtcjZtMktfWVYakqnIrQpPxlAZ+RzHzkZgQXfH2zD8KoGMnsd6H+SzkR6b7ijr
-        Ku9QPj3H1nn5RB12RhGcC6oINcY7MAhCzx9aM79f+WJGt2ylr3eF3Y="
-    secret_access_key:  
-        secure: "e0IFdenansmuxmIKXB9+mcv7Ha7l0QPSYwB//8CM0VIQo1egGb5nHluTrI8XxWa1m05is
-        aGQt3K/5TzVb6xOP0XO+y3sBGA2ihJ4n+l9KMZOzTvuQ5PKWEOZcNEV5EprYOzGy2WDBXthDfGEe5hWS
-        kXvar7ctreF7iR63uC+ClTCLLA1MdCTajboBMW4k37oWDgQQZVRTWCtbdhidfUkR2IR9jd89TfqDHCrF
-        u5CrHO29/VqkEY90HXmXq+k84xkm7+K7dmBHXbDkeCeXxD1BCRDZx9GTD1Z6IyChWFmlo+IAgm9ZIfm8
-        w7LDuD/VKA42NNc5tkEKGye8zZwoibI8dlJHoPFL3LqmFBYKf6/fXGjtqaC88SnkSCr2gNVLHlul1cwu
-        M2OI45cw7d5nR4KdrV0m1dLw6KAaOFCyB3fVprBaDsiCMuTes9KWZUuX5O2kpP4170LI/RlsxgEC6Dh6
-        3752tQ+J10O+OPOgGZt/qsTIVBBQD5jT7gTEYnn+ieE0qLAtKFW8AUmOW64rrZPXsguMVBNvGFmtYh9F
-        Aprr+XEftXwg8pMJc0OMNrCJJ0IdXOHc+cKA6Hpg4Ztt+F7QyAfchKQAA3zdRWj28q0ZZzMJRMxwDcJ8
-        E1FnbbS7a48R5dG2lehjv2Rvo+lIaPd4hrpo08k94VgRSt9/GaLgAw="
+    access_key_id: $AWS_ACCESS_KEY
+    secret_access_key: 
+        secure: "$AWS_SECRET_KEY"
     edge: true
     skip_cleanup: true
